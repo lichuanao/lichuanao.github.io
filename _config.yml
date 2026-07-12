@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 李传傲的博客 # 站点主标题（改成你自己的）
+title: Leo的博客 # 站点主标题（改成你自己的）
 
 tagline: 记录技术、思考与日常 # 副标题，显示在标题下方
 
@@ -31,14 +31,14 @@ twitter:
 
 social:
   # 你的全名，会作为文章默认作者与页脚版权署名
-  name: 李传傲
+  name: Leo
   email: lichuanao@example.com # 改成你的邮箱
   fediverse_handle: # 可选，联邦宇宙账号，如 "@username@domain.com"
   links:
     # 第一个元素会作为页脚版权署名链接
     - https://github.com/lichuanao
     # 想加更多社交链接，取消下面注释并改好
-    # - https://www.linkedin.com/in/username
+    - https://space.bilibili.com/1555694211?spm_id_from=333.1007.0.0
 
 # 站长验证（可选，不需要就留空）
 webmaster_verifications:
