@@ -71,7 +71,7 @@ theme_mode:
 cdn:
 
 # 侧边栏头像，支持本地或外链。把图片放到 assets/img/ 下，写 "/assets/img/xxx.png"
-avatar: /assets/img/avatar.svg
+avatar: /assets/img/avatar.jpg
 
 # 全站社交分享预览图（SEO og:image），可选
 social_preview_image:
