@@ -1,0 +1,195 @@
+# The Site Configuration
+
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# 网页语言（决定界面语言）。可选：en / zh-CN / zh-TW / fr / de / ja ...
+# 想换语言只改这一行即可。
+lang: zh-CN
+
+# 时区（影响文章时间显示）
+timezone: Asia/Shanghai
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: 李传傲的博客 # 站点主标题（改成你自己的）
+
+tagline: 记录技术、思考与日常 # 副标题，显示在标题下方
+
+description: >- # 用于 SEO 和 RSS 描述
+  一个基于 Jekyll + GitHub Pages 的个人博客，免费、开源、易于维护。
+
+# 你的站点地址（结尾不要带斜杠）。用户站点通常为 https://<用户名>.github.io
+url: "https://lichuanao.github.io"
+
+github:
+  username: lichuanao # 改成你的 GitHub 用户名
+
+twitter:
+  username: # 没有就留空
+
+social:
+  # 你的全名，会作为文章默认作者与页脚版权署名
+  name: 李传傲
+  email: lichuanao@example.com # 改成你的邮箱
+  fediverse_handle: # 可选，联邦宇宙账号，如 "@username@domain.com"
+  links:
+    # 第一个元素会作为页脚版权署名链接
+    - https://github.com/lichuanao
+    # 想加更多社交链接，取消下面注释并改好
+    # - https://www.linkedin.com/in/username
+
+# 站长验证（可选，不需要就留空）
+webmaster_verifications:
+  google:
+  bing:
+  baidu:
+  yandex:
+
+# ↑ --------------------------
+# jekyll-seo-tag 设置结束
+
+# 网站访问统计（可选，不需要留空）
+# 支持：google / goatcounter / umami / matomo / cloudflare / fathom
+analytics:
+  google:
+    id:
+  umami:
+    id:
+    domain:
+
+# 阅读量统计（目前仅支持 goatcounter，可选）
+pageviews:
+  provider:
+
+# 默认配色：留空 = 跟随系统，侧边栏可切换明暗
+# 可选值：light / dark
+theme_mode:
+
+# 媒体资源的 CDN 地址（可选，一般留空）
+cdn:
+
+# 侧边栏头像，支持本地或外链。把图片放到 assets/img/ 下，写 "/assets/img/xxx.png"
+avatar: /assets/img/avatar.svg
+
+# 全站社交分享预览图（SEO og:image），可选
+social_preview_image:
+
+# 文章目录(TOC)全局开关
+toc: true
+
+# 文章页“编辑此文”按钮（鼓励贡献），不需要就关掉
+actions:
+  edit_post:
+    enabled: false
+    url: ""
+    static_url: false
+
+# 评论系统（可选）。支持：disqus / utterances / giscus
+# 推荐 giscus（免费、基于 GitHub Discussions）。启用方法见 README.md
+comments:
+  provider:
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+# 自托管静态资源（可选，一般不用）
+assets:
+  self_host:
+    enabled:
+    env:
+
+# PWA（可安装到手机桌面 / 离线访问）
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+# 站点根路径。用户站点(用户名.github.io)留空；项目站点填 "/仓库名"
+baseurl: ""
+
+# ------------ 以下一般无需修改 ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
