@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Leo # 站点主标题（改成你自己的）
+title:   Leo # 站点主标题（改成你自己的）
 
 tagline: 记录技术、思考与日常 # 副标题，显示在标题下方
 
